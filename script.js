@@ -11,7 +11,6 @@ function addBook() {
   let myYear = document.querySelector("#myYear").value;
   const bookContainerId = `book-${Date.now()}`;
 
-    if (myTitle.lenghth > 2 && myDescription.length > 2 && myPublishingHouse.length > 2 && myAutor.length > 2) {
   myBooks.innerHTML += `
   <div id="${bookContainerId}" class="bookContainer">
     <div class="list-item title"><img src="img/book.png" class="small-img" /> ${myTitle}</div>
@@ -21,9 +20,6 @@ function addBook() {
     <div class="list-item">Rok wydania: ${myYear}</div>
     <button class="deleteButton" onclick="deleteBook('${bookContainerId}')">Delete</button>
   </div>`;
-  } else {
-    alert("wypełni wszystkie wymagane pola");
-  }
 
   // Füge Buch zum Local Storage hinzu
   localStorage.setItem('Book', myBooks.innerHTML);
