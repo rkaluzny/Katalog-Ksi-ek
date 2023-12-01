@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+    <h1>Katalog</h1>
+    <h3>Tytuł</h3>
+    <input id="myTitle" placeholder="Tytuł" type="text">
+    <h3>Autor</h3>
+    <input type="text" id="myAutor" placeholder="Autor">
+    <h3>Opis</h3>
+    <textarea id="myDescription" placeholder="Opis" type="text"></textarea>
+    <h3>Wydawnictwo</h3>
+    <input id="myPublishingHouse" placeholder="Wydawnictwo" type="text">
+    <h3>Rok Wydania</h3>
+    <input type="number"id="myYear" placeholder="Rok Wydania">
+    
+    <button onclick="addBook()">Speichern</button>
+
+    <div id="myBooks">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
